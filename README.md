@@ -1,4 +1,4 @@
-# GooseLin
+# gooseLin
 ## Goose AI Agent Install + Remote Ollama API Server Connectivity
 <img src="assets/images/goose.jpg" width="10%" alt="Logo">
 
