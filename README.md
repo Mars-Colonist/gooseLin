@@ -16,7 +16,7 @@ The script performs the following tasks:
 
 ### Script Usage
 
-1. Save the script as `gooselin.sh'
+1. Save the script as `gooselin.sh'.
 2. Make the script executable:
 
    ```bash
