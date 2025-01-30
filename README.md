@@ -5,7 +5,7 @@
 Explanation of the Script:
 Task a) Install and Start Ollama API:
 
-Downloads and installs the Ollama API service from the provided script.
+-- Downloads and installs the Ollama API service from the provided script.
 Starts the Ollama API service in the background using nohup to ensure it continues running.
 Task b) Create and Push the Model:
 
