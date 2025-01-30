@@ -2,7 +2,7 @@
 
 <img src="assets/images/goose.jpg" width="10%" alt="Logo">
 
-# Goose Agent Setup with Ollama API
+## Goose Agent Setup with Ollama API Server
 
 This script automates the process of installing and configuring the **Goose Agent** on a Linux system to interact with a remote **Ollama API** server. The script handles the installation of the Ollama API, creation and pushing of the model, configuring the Goose agent, testing the network connectivity, and printing a success message.
 
