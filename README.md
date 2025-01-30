@@ -33,6 +33,4 @@ The script performs the following tasks:
  Performing network test to verify connectivity to the Ollama API server...
  All tasks have completed successfully. The remote Ollama API server is reachable on port 11434.
 
-
-### Ollama API/DeepS33k R! Server 
-
+#### 
