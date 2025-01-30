@@ -1,26 +1,24 @@
 # gooseLin
-## Goose AI Agent Install + Remote Ollama API Server Connectivity
+
 <img src="assets/images/goose.jpg" width="10%" alt="Logo">
 
-Explanation of the Script:
-- Install and Start Ollama API:
+# Goose Agent Setup with Ollama API
 
-- Downloads and installs the Ollama API service from the provided script.
+This script automates the process of installing and configuring the **Goose Agent** on a Linux system to interact with a remote **Ollama API** server. The script handles the installation of the Ollama API, creation and pushing of the model, configuring the Goose agent, testing the network connectivity, and printing a success message.
 
-- Starts the Ollama API service in the background using nohup to ensure it continues running.
+The script performs the following tasks:
 
-- Create and Push the Model
+1. Installs the **Ollama API** and starts the service in the background using `nohup` to ensure it continues running after the terminal is closed.
+2. Creates and pushes the model to the Ollama server using the `ollama create` and `ollama push` commands.
+3. Updates the **Modefile** to set the correct Ollama API URL and configure the model provider to **Ollama**.
+4. Performs a connectivity test to verify that the Ollama API server is reachable on port `11434`.
+5. Prints a success message confirming that all tasks have completed successfully and the Ollama API server is reachable.
 
-- Runs ollama create and ollama push to create and push the model (deepseek-r1-goose) to the Ollama server.
+## Script Usage
 
-- Update Modefile:
+1. Save the script as `setup_goose_agent.sh`.
+2. Make the script executable:
 
-- Modifies the Modefile to include the remote Ollama API URL (http://10.16.28.100:11434).
+   ```bash
+   chmod +x setup_goose_agent.sh
 
-- Ensures the model_provider in the Modefile is set to "Ollama".
-
-- Performs a network test using curl to check if the Ollama API server is reachable on port 11434.
-The curl command makes an HTTP request to the server and verifies the response headers.
-Task 
-
-If all tasks complete successfully, a success message is printed.
