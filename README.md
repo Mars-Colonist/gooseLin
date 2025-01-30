@@ -20,10 +20,10 @@ The script performs the following tasks:
 2. Make the script executable:
 
    ```bash
-   chmod +x setup_goose_agent.sh
+   chmod +x gooselin.sh
 3. Execute the script
    ```bash
-   ./setup_goose_agent.sh
+   ./gooselin.sh
 
 ### Example Output
  ```bash
