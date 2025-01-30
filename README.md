@@ -10,7 +10,7 @@ The script performs the following tasks:
 
 1. Installs the **Ollama API** and starts the service in the background using `nohup` to ensure it continues running after the terminal is closed.
 2. Creates and pushes the model to the Ollama server using the `ollama create` and `ollama push` commands.
-3. Updates the **Modefile** to set the correct Ollama API URL and configure the model provider to **Ollama**.
+3. Updates the **Modelfile** to set the correct Ollama API URL and configure the model provider to **Ollama**.
 4. Performs a connectivity test to verify that the Ollama API server is reachable on port `11434`.
 5. Prints a success message confirming that all tasks have completed successfully and the Ollama API server is reachable.
 
@@ -29,7 +29,7 @@ The script performs the following tasks:
  ```bash
  Installing and starting the Ollama API service...
  Creating and pushing the model to Ollama...
- Updating the Modefile with the Ollama API URL and setting the model provider...
+ Updating the Modelfile with the Ollama API URL and setting the model provider...
  Performing network test to verify connectivity to the Ollama API server...
  All tasks have completed successfully. The remote Ollama API server is reachable on port 11434.
 
