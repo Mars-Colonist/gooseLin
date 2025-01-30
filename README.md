@@ -1,4 +1,4 @@
-# gooseSeek
+# gooseSeek - Agentic AI Red Team
 
 <img src="assets/images/goose.jpg" width="10%" alt="Logo">
 
