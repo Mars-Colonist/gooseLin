@@ -9,7 +9,7 @@ Explanation of the Script:
 
 - Starts the Ollama API service in the background using nohup to ensure it continues running.
 
-- Create and Push the Model:
+- Create and Push the Model
 
 - Runs ollama create and ollama push to create and push the model (deepseek-r1-goose) to the Ollama server.
 
