@@ -1,5 +1,5 @@
 # GooseLin
-## AI Agent Install + Remote Ollama API Server
+## Goose AI Agent Install + Remote Ollama API Server
 <img src="assets/images/goose.jpg" width="10%" alt="Logo">
 
 - Explanation of the Script:
