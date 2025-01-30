@@ -1,4 +1,4 @@
-# gooseLin
+# gooseLinS33k
 
 <img src="assets/images/goose.jpg" width="10%" alt="Logo">
 
