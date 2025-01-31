@@ -16,14 +16,14 @@ The script performs the following tasks:
 
 ### Script Usage
 
-1. Save the script as `gooselin.sh`
+1. Save the script as `gooseseek.sh`
 2. Make the script executable:
 
    ```bash
-   chmod +x gooselin.sh
+   chmod +x gooseseek.sh
 3. Execute the script
    ```bash
-   ./gooselin.sh
+   ./gooseseek.sh
 
 ### Example Output
  ```bash
