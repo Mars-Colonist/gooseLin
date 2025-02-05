@@ -34,3 +34,57 @@ The script performs the following tasks:
  All tasks have completed successfully. The remote Ollama API server is reachable on port 11434.
  ```
 ### Ollama API/DeepS33k-R1 Server (Windows)
+
+
+
+
+
+
+# System Architecture
+
+## Components:
+
+1. **Windows Machine (Server):**
+   - **Ollama API Service:** 
+     - Receives commands from the web interface.
+   - **DeepSeek-R1 LLM:** 
+     - Processes the commands.
+   - **Task Queue:** 
+     - Stores commands to be polled by the Goose agent.
+   - **Web Interface:** 
+     - Used by the red team operator to send system commands.
+
+2. **Linux Machine (Client):**
+   - **Agentic AI Goose Agent:** 
+     - Polls the Ollama API service at regular intervals for new tasks.
+   - **Task Execution Module:** 
+     - Executes received commands locally.
+
+## Diagram:
+
+```plaintext
++----------------------------+
+|                            |
+|  Windows Machine (Server)  |
+|                            |
+|  - Ollama API Service      |
+|  - DeepSeek-R1 LLM         |
+|  - Task Queue              |
+|  - Web Interface           |
+|    (Red Team Operator)     |
+|                            |
++-------------^--------------+
+              |
+              |
+              v
++-------------+--------------+
+|                            |
+|  Linux Machine (Client)    |
+|                            |
+|  - Agentic AI Goose Agent  |
+|  - Polls Ollama API        |
+|    Service                 |
+|  - Executes Commands       |
+|                            |
++----------------------------+
+```plaintext
