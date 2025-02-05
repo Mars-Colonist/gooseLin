@@ -87,4 +87,4 @@ The script performs the following tasks:
 |  - Executes Commands       |
 |                            |
 +----------------------------+
-```plaintext
+```
