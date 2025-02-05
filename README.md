@@ -2,6 +2,55 @@
 
 <img src="assets/images/goose.jpg" width="10%" alt="Logo">
 
+# System Architecture
+
+## Components:
+
+1. **Windows Machine (Server):**
+   - **Ollama API Service:** 
+     - Receives commands from the web interface.
+   - **DeepSeek-R1 LLM:** 
+     - Processes the commands.
+   - **Task Queue:** 
+     - Stores commands to be polled by the Goose agent.
+   - **Web Interface:** 
+     - Used by the red team operator to send system commands.
+
+2. **Linux Machine (Client):**
+   - **Agentic AI Goose Agent:** 
+     - Polls the Ollama API service at regular intervals for new tasks.
+   - **Task Execution Module:** 
+     - Executes received commands locally.
+
+## Diagram:
+
+```plaintext
++----------------------------+
+|                            |
+|  Windows Machine (Server)  |
+|                            |
+|  - Ollama API Service      |
+|  - DeepSeek-R1 LLM         |
+|  - Task Queue              |
+|  - Web Interface           |
+|    (Red Team Operator)     |
+|                            |
++-------------^--------------+
+              |
+              |
+              v
++-------------+--------------+
+|                            |
+|  Linux Machine (Client)    |
+|                            |
+|  - Agentic AI Goose Agent  |
+|  - Polls Ollama API        |
+|    Service                 |
+|  - Executes Commands       |
+|                            |
++----------------------------+
+
+
 ### Goose Agent (Linux) ---> Remote Ollama API Server + Jailbroken D33pSeek R1
 
 This script automates the process of installing and configuring the **Goose Agent** on a Linux system to interact with a remote **Ollama API** server. The script handles the installation of the Ollama API, creation and pushing of the model, configuring the Goose agent, testing the network connectivity, and printing a success message.
