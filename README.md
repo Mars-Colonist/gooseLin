@@ -60,7 +60,7 @@ The script performs the following tasks:
    - **Task Execution Module:** 
      - Executes received commands locally.
 
-## Systems Architecture (Collapsed):
+## Diagram (Collapsed):
 
 ```plaintext
 +----------------------------+
